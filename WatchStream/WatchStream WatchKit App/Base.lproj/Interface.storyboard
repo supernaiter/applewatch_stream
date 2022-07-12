@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchStream_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="o4G-Fy-ege">
+                            <items>
+                                <button width="1" height="1" alignment="center" verticalAlignment="center" title="STOP" id="UGR-C8-hJI">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" red="1" green="0.1189014893203757" blue="0.13951185619834339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="23"/>
+                                    <connections>
+                                        <action selector="actionStop" destination="AgC-eL-Hgc" id="pSZ-ts-H0v"/>
+                                    </connections>
+                                </button>
+                                <button width="1" height="1" alignment="center" verticalAlignment="center" hidden="YES" title="START" id="Fhy-Ec-sod">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" name="AccentColor"/>
+                                    <fontDescription key="font" type="system" pointSize="23"/>
+                                    <connections>
+                                        <action selector="actionStart" destination="AgC-eL-Hgc" id="qW9-AK-3FV"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="startButton" destination="Fhy-Ec-sod" id="9uq-RC-33a"/>
+                        <outlet property="stopButton" destination="UGR-C8-hJI" id="SXJ-j2-emX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-18" y="-52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

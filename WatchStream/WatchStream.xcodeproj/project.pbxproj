@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		139A26D799B4BFFB479196AB /* Pods_WatchStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4762B74303910551457BF89B /* Pods_WatchStream.framework */; };
+		A1B3E1565D91477FB77287A1 /* Pods_WatchStream_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6F4AB0187842DB829D4AE3 /* Pods_WatchStream_WatchKit_Extension.framework */; };
+		A40CC416D6DBC1FC0E910D11 /* Pods_WatchStream_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3421853499C3A48C3DA5F7D5 /* Pods_WatchStream_WatchKit_App.framework */; };
+		FB764A50287DB18B00F387E7 /* RealtimeDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB764A4F287DB18B00F387E7 /* RealtimeDBHelper.swift */; };
+		FB764A52287DB2C300F387E7 /* MotionDatafetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB764A51287DB2C300F387E7 /* MotionDatafetcher.swift */; };
+		FB869B4A287DAC7500D03D49 /* WatchStream WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FB869B49287DAC7500D03D49 /* WatchStream WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FB869B50287DAC7500D03D49 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB869B4E287DAC7500D03D49 /* Interface.storyboard */; };
+		FB869B52287DAC7700D03D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB869B51287DAC7700D03D49 /* Assets.xcassets */; };
+		FB869B58287DAC7700D03D49 /* WatchStream WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FB869B57287DAC7700D03D49 /* WatchStream WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FB869B5D287DAC7700D03D49 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB869B5C287DAC7700D03D49 /* InterfaceController.swift */; };
+		FB869B5F287DAC7700D03D49 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB869B5E287DAC7700D03D49 /* ExtensionDelegate.swift */; };
+		FB869B61287DAC7700D03D49 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB869B60287DAC7700D03D49 /* ComplicationController.swift */; };
+		FB869B63287DAC7800D03D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB869B62287DAC7800D03D49 /* Assets.xcassets */; };
+		FB869B73287DAEA900D03D49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB869B72287DAEA900D03D49 /* GoogleService-Info.plist */; };
+		FB869B74287DAEA900D03D49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB869B72287DAEA900D03D49 /* GoogleService-Info.plist */; };
+		FB869B75287DAEA900D03D49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB869B72287DAEA900D03D49 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB869B4B287DAC7500D03D49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB869B3F287DAC7500D03D49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB869B48287DAC7500D03D49;
+			remoteInfo = "WatchStream WatchKit App";
+		};
+		FB869B59287DAC7700D03D49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB869B3F287DAC7500D03D49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB869B56287DAC7700D03D49;
+			remoteInfo = "WatchStream WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB869B6A287DAC7800D03D49 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FB869B58287DAC7700D03D49 /* WatchStream WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB869B6E287DAC7800D03D49 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FB869B4A287DAC7500D03D49 /* WatchStream WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3421853499C3A48C3DA5F7D5 /* Pods_WatchStream_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchStream_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35AF9D172AAEED7FF0A783D9 /* Pods-WatchStream WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchStream WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-WatchStream WatchKit App/Pods-WatchStream WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		35DEC5334E4402ABAA55413E /* Pods-WatchStream WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchStream WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-WatchStream WatchKit Extension/Pods-WatchStream WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		46B8E1085D092B96F2A19307 /* Pods-WatchStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchStream.debug.xcconfig"; path = "Target Support Files/Pods-WatchStream/Pods-WatchStream.debug.xcconfig"; sourceTree = "<group>"; };
+		4762B74303910551457BF89B /* Pods_WatchStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C026F15210BFC253AF972EE /* Pods-WatchStream WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchStream WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-WatchStream WatchKit Extension/Pods-WatchStream WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		DF6F4AB0187842DB829D4AE3 /* Pods_WatchStream_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchStream_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8A021283D2ADF8C6BD5F583 /* Pods-WatchStream WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchStream WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-WatchStream WatchKit App/Pods-WatchStream WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		EAE968F46AA58E22183B17FF /* Pods-WatchStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchStream.release.xcconfig"; path = "Target Support Files/Pods-WatchStream/Pods-WatchStream.release.xcconfig"; sourceTree = "<group>"; };
+		FB764A4D287DB18A00F387E7 /* WatchStream-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatchStream-Bridging-Header.h"; sourceTree = "<group>"; };
+		FB764A4E287DB18A00F387E7 /* WatchStream WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatchStream WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
+		FB764A4F287DB18B00F387E7 /* RealtimeDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeDBHelper.swift; sourceTree = "<group>"; };
+		FB764A51287DB2C300F387E7 /* MotionDatafetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDatafetcher.swift; sourceTree = "<group>"; };
+		FB869B45287DAC7500D03D49 /* WatchStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB869B49287DAC7500D03D49 /* WatchStream WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchStream WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB869B4F287DAC7500D03D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FB869B51287DAC7700D03D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB869B57287DAC7700D03D49 /* WatchStream WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchStream WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB869B5C287DAC7700D03D49 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FB869B5E287DAC7700D03D49 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FB869B60287DAC7700D03D49 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FB869B62287DAC7800D03D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB869B64287DAC7800D03D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB869B72287DAEA900D03D49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C41B59534BFA850D2471BE01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A40CC416D6DBC1FC0E910D11 /* Pods_WatchStream_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0F7F2FBF8254C8A79F6C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139A26D799B4BFFB479196AB /* Pods_WatchStream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB869B54287DAC7700D03D49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B3E1565D91477FB77287A1 /* Pods_WatchStream_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FFEC8A75858B5A1CEBA21BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4762B74303910551457BF89B /* Pods_WatchStream.framework */,
+				3421853499C3A48C3DA5F7D5 /* Pods_WatchStream_WatchKit_App.framework */,
+				DF6F4AB0187842DB829D4AE3 /* Pods_WatchStream_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C30C308C7D183AF6471E75AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46B8E1085D092B96F2A19307 /* Pods-WatchStream.debug.xcconfig */,
+				EAE968F46AA58E22183B17FF /* Pods-WatchStream.release.xcconfig */,
+				35AF9D172AAEED7FF0A783D9 /* Pods-WatchStream WatchKit App.debug.xcconfig */,
+				E8A021283D2ADF8C6BD5F583 /* Pods-WatchStream WatchKit App.release.xcconfig */,
+				5C026F15210BFC253AF972EE /* Pods-WatchStream WatchKit Extension.debug.xcconfig */,
+				35DEC5334E4402ABAA55413E /* Pods-WatchStream WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB869B3E287DAC7500D03D49 = {
+			isa = PBXGroup;
+			children = (
+				FB869B4D287DAC7500D03D49 /* WatchStream WatchKit App */,
+				FB869B5B287DAC7700D03D49 /* WatchStream WatchKit Extension */,
+				FB869B46287DAC7500D03D49 /* Products */,
+				C30C308C7D183AF6471E75AD /* Pods */,
+				2FFEC8A75858B5A1CEBA21BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB869B46287DAC7500D03D49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB869B45287DAC7500D03D49 /* WatchStream.app */,
+				FB869B49287DAC7500D03D49 /* WatchStream WatchKit App.app */,
+				FB869B57287DAC7700D03D49 /* WatchStream WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB869B4D287DAC7500D03D49 /* WatchStream WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FB869B4E287DAC7500D03D49 /* Interface.storyboard */,
+				FB869B51287DAC7700D03D49 /* Assets.xcassets */,
+			);
+			path = "WatchStream WatchKit App";
+			sourceTree = "<group>";
+		};
+		FB869B5B287DAC7700D03D49 /* WatchStream WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FB869B5C287DAC7700D03D49 /* InterfaceController.swift */,
+				FB869B5E287DAC7700D03D49 /* ExtensionDelegate.swift */,
+				FB869B60287DAC7700D03D49 /* ComplicationController.swift */,
+				FB869B62287DAC7800D03D49 /* Assets.xcassets */,
+				FB869B64287DAC7800D03D49 /* Info.plist */,
+				FB869B72287DAEA900D03D49 /* GoogleService-Info.plist */,
+				FB764A4F287DB18B00F387E7 /* RealtimeDBHelper.swift */,
+				FB764A51287DB2C300F387E7 /* MotionDatafetcher.swift */,
+				FB764A4D287DB18A00F387E7 /* WatchStream-Bridging-Header.h */,
+				FB764A4E287DB18A00F387E7 /* WatchStream WatchKit App-Bridging-Header.h */,
+			);
+			path = "WatchStream WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB869B44287DAC7500D03D49 /* WatchStream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB869B6F287DAC7800D03D49 /* Build configuration list for PBXNativeTarget "WatchStream" */;
+			buildPhases = (
+				A4274565130CF5F8F839306B /* [CP] Check Pods Manifest.lock */,
+				FB869B43287DAC7500D03D49 /* Resources */,
+				FB869B6E287DAC7800D03D49 /* Embed Watch Content */,
+				EE0F7F2FBF8254C8A79F6C21 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB869B4C287DAC7500D03D49 /* PBXTargetDependency */,
+			);
+			name = WatchStream;
+			productName = WatchStream;
+			productReference = FB869B45287DAC7500D03D49 /* WatchStream.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		FB869B48287DAC7500D03D49 /* WatchStream WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB869B6B287DAC7800D03D49 /* Build configuration list for PBXNativeTarget "WatchStream WatchKit App" */;
+			buildPhases = (
+				F904856A3803FE9CD7413319 /* [CP] Check Pods Manifest.lock */,
+				FB869B47287DAC7500D03D49 /* Resources */,
+				FB869B6A287DAC7800D03D49 /* Embed App Extensions */,
+				C41B59534BFA850D2471BE01 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB869B5A287DAC7700D03D49 /* PBXTargetDependency */,
+			);
+			name = "WatchStream WatchKit App";
+			productName = "WatchStream WatchKit App";
+			productReference = FB869B49287DAC7500D03D49 /* WatchStream WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FB869B56287DAC7700D03D49 /* WatchStream WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB869B67287DAC7800D03D49 /* Build configuration list for PBXNativeTarget "WatchStream WatchKit Extension" */;
+			buildPhases = (
+				3AA8CFF0AAF3434941414A68 /* [CP] Check Pods Manifest.lock */,
+				FB869B53287DAC7700D03D49 /* Sources */,
+				FB869B54287DAC7700D03D49 /* Frameworks */,
+				FB869B55287DAC7700D03D49 /* Resources */,
+				CAB97C3F960B0CE9C0965B97 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchStream WatchKit Extension";
+			productName = "WatchStream WatchKit Extension";
+			productReference = FB869B57287DAC7700D03D49 /* WatchStream WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB869B3F287DAC7500D03D49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					FB869B44287DAC7500D03D49 = {
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
+					};
+					FB869B48287DAC7500D03D49 = {
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
+					};
+					FB869B56287DAC7700D03D49 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = FB869B42287DAC7500D03D49 /* Build configuration list for PBXProject "WatchStream" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB869B3E287DAC7500D03D49;
+			productRefGroup = FB869B46287DAC7500D03D49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB869B44287DAC7500D03D49 /* WatchStream */,
+				FB869B48287DAC7500D03D49 /* WatchStream WatchKit App */,
+				FB869B56287DAC7700D03D49 /* WatchStream WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB869B43287DAC7500D03D49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB869B73287DAEA900D03D49 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB869B47287DAC7500D03D49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB869B52287DAC7700D03D49 /* Assets.xcassets in Resources */,
+				FB869B74287DAEA900D03D49 /* GoogleService-Info.plist in Resources */,
+				FB869B50287DAC7500D03D49 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB869B55287DAC7700D03D49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB869B63287DAC7800D03D49 /* Assets.xcassets in Resources */,
+				FB869B75287DAEA900D03D49 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AA8CFF0AAF3434941414A68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchStream WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4274565130CF5F8F839306B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchStream-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAB97C3F960B0CE9C0965B97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchStream WatchKit Extension/Pods-WatchStream WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchStream WatchKit Extension/Pods-WatchStream WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchStream WatchKit Extension/Pods-WatchStream WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F904856A3803FE9CD7413319 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchStream WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB869B53287DAC7700D03D49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB764A52287DB2C300F387E7 /* MotionDatafetcher.swift in Sources */,
+				FB869B5F287DAC7700D03D49 /* ExtensionDelegate.swift in Sources */,
+				FB869B5D287DAC7700D03D49 /* InterfaceController.swift in Sources */,
+				FB764A50287DB18B00F387E7 /* RealtimeDBHelper.swift in Sources */,
+				FB869B61287DAC7700D03D49 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB869B4C287DAC7500D03D49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB869B48287DAC7500D03D49 /* WatchStream WatchKit App */;
+			targetProxy = FB869B4B287DAC7500D03D49 /* PBXContainerItemProxy */;
+		};
+		FB869B5A287DAC7700D03D49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB869B56287DAC7700D03D49 /* WatchStream WatchKit Extension */;
+			targetProxy = FB869B59287DAC7700D03D49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB869B4E287DAC7500D03D49 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB869B4F287DAC7500D03D49 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB869B65287DAC7800D03D49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB869B66287DAC7800D03D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB869B68287DAC7800D03D49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C026F15210BFC253AF972EE /* Pods-WatchStream WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W324VVUUCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchStream WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchStream WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoki.detectingtouchpoints.WatchStream.WatchStream.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		FB869B69287DAC7800D03D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35DEC5334E4402ABAA55413E /* Pods-WatchStream WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W324VVUUCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchStream WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchStream WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoki.detectingtouchpoints.WatchStream.WatchStream.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		FB869B6C287DAC7800D03D49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35AF9D172AAEED7FF0A783D9 /* Pods-WatchStream WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W324VVUUCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchStream_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchStream WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoki.detectingtouchpoints.WatchStream.WatchStream.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchStream WatchKit Extension/WatchStream WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		FB869B6D287DAC7800D03D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A021283D2ADF8C6BD5F583 /* Pods-WatchStream WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W324VVUUCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchStream_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchStream WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoki.detectingtouchpoints.WatchStream.WatchStream.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchStream WatchKit Extension/WatchStream WatchKit App-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		FB869B70287DAC7800D03D49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B8E1085D092B96F2A19307 /* Pods-WatchStream.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W324VVUUCT;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoki.detectingtouchpoints.WatchStream.WatchStream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchStream WatchKit Extension/WatchStream-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FB869B71287DAC7800D03D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAE968F46AA58E22183B17FF /* Pods-WatchStream.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W324VVUUCT;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoki.detectingtouchpoints.WatchStream.WatchStream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchStream WatchKit Extension/WatchStream-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB869B42287DAC7500D03D49 /* Build configuration list for PBXProject "WatchStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB869B65287DAC7800D03D49 /* Debug */,
+				FB869B66287DAC7800D03D49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB869B67287DAC7800D03D49 /* Build configuration list for PBXNativeTarget "WatchStream WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB869B68287DAC7800D03D49 /* Debug */,
+				FB869B69287DAC7800D03D49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB869B6B287DAC7800D03D49 /* Build configuration list for PBXNativeTarget "WatchStream WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB869B6C287DAC7800D03D49 /* Debug */,
+				FB869B6D287DAC7800D03D49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB869B6F287DAC7800D03D49 /* Build configuration list for PBXNativeTarget "WatchStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB869B70287DAC7800D03D49 /* Debug */,
+				FB869B71287DAC7800D03D49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB869B3F287DAC7500D03D49 /* Project object */;
+}
