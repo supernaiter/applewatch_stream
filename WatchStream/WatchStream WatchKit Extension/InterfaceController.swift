@@ -17,6 +17,12 @@ class InterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
+        
+        startButton.setHidden(false)
+        startButton.setEnabled(true)
+
+        stopButton.setHidden(true)
+        stopButton.setEnabled(false)
                 
     }
     

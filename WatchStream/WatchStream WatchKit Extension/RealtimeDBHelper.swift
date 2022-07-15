@@ -25,7 +25,7 @@ class RealtimeDBHelper {
                 "Accelerometer Z": values["Accelerometer Z"] ?? "",
                 "Gyroscope X": values["Gyroscope X"] ?? "",
                 "Gyroscope Y": values["Gyroscope Y"] ?? "",
-                "Gyroscope Z": values["Gyroscope X"] ?? "",
+                "Gyroscope Z": values["Gyroscope Z"] ?? "",
             ]
         )
     }

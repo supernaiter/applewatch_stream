@@ -574,7 +574,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W324VVUUCT;
+				DEVELOPMENT_TEAM = 9D7A84P2AM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WatchStream WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchStream WatchKit Extension";
@@ -606,7 +606,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W324VVUUCT;
+				DEVELOPMENT_TEAM = 9D7A84P2AM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WatchStream WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchStream WatchKit Extension";
@@ -641,7 +641,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W324VVUUCT;
+				DEVELOPMENT_TEAM = 9D7A84P2AM;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchStream_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchStream WatchKit App";
@@ -675,7 +675,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W324VVUUCT;
+				DEVELOPMENT_TEAM = C68Y96L8J4;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchStream_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchStream WatchKit App";
@@ -705,7 +705,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W324VVUUCT;
+				DEVELOPMENT_TEAM = 9D7A84P2AM;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -727,7 +727,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W324VVUUCT;
+				DEVELOPMENT_TEAM = 9D7A84P2AM;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -12,5 +12,7 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>NSMotionUsageDescription</key>
+	<string>This permission is needed to stream data from watch to python console</string>
 </dict>
 </plist>
