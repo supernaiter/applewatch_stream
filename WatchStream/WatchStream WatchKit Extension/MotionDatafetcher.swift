@@ -17,7 +17,7 @@ class MotionDatafetcher {
     
     
     private var timer: Timer?
-    private var updateTimeInterval: Double = 0.01
+    private var updateTimeInterval: Double = 1/60
     private let manager = CMMotionManager()
     
     func startFetch() {
@@ -58,7 +58,7 @@ class MotionDatafetcher {
     func startDeviceMotionFetch() {
         var values: [String:String] = [:]
         if manager.isDeviceMotionAvailable {
-            self.manager.deviceMotionUpdateInterval = 1.0 / 60.0
+            self.manager.deviceMotionUpdateInterval = updateTimeInterval
             self.manager.showsDeviceMovementDisplay = true
             self.manager.startDeviceMotionUpdates(using: .xMagneticNorthZVertical, to: .main, withHandler: { [weak self] (data, error) in
                 guard let weakSelf = self else {return}
@@ -81,7 +81,7 @@ class MotionDatafetcher {
                       
                      
                       if weakSelf.manager.isAccelerometerAvailable {
-                          weakSelf.manager.accelerometerUpdateInterval = 1.0/60
+                          weakSelf.manager.accelerometerUpdateInterval = weakSelf.updateTimeInterval
                           self?.manager.startAccelerometerUpdates(to: .main, withHandler: { data, error in
                               if let e = error {
                                   print(e.localizedDescription)
