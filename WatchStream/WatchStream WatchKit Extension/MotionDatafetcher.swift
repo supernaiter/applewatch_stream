@@ -17,7 +17,7 @@ class MotionDatafetcher {
     
     
     private var timer: Timer?
-    private var updateTimeInterval: Double = 1/60
+    private var updateTimeInterval: Double = 1
     private let manager = CMMotionManager()
     
     func startFetch() {
