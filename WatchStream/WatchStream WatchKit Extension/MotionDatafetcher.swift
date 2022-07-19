@@ -65,11 +65,6 @@ class MotionDatafetcher {
               // Make sure the data is valid befrore accessing it.
                   if let validData = data {
                      // Get the attitude relative to the magnetic north reference frame.
-                     let roll = validData.attitude.roll
-                     let pitch = validData.attitude.pitch
-                     let yaw = validData.attitude.yaw
-
- 
                       print("Gyroscope Roll \(validData.attitude.roll)")
                       print("Gyroscope Pitch \(validData.attitude.pitch)")
                       print("Gyroscope Yaw  \(validData.attitude.yaw)")
