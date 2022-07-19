@@ -56,14 +56,14 @@
 		};
 		FB869B6E287DAC7800D03D49 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
 				FB869B4A287DAC7500D03D49 /* WatchStream WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -675,7 +675,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C68Y96L8J4;
+				DEVELOPMENT_TEAM = 9D7A84P2AM;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchStream_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchStream WatchKit App";

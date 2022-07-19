@@ -52,7 +52,9 @@ class InterfaceController: WKInterfaceController {
         stopButton.setHidden(false)
         stopButton.setEnabled(true)
         
-        MotionDatafetcher.shared.startFetch()
+        //MotionDatafetcher.shared.startFetch()
+        
+        MotionDatafetcher.shared.startDeviceMotionFetch()
     }
     
 }

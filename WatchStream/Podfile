@@ -24,5 +24,6 @@ target 'WatchStream WatchKit Extension' do
 
   pod 'FirebaseAuth'
   pod 'Firebase/Database'
+  
 
 end
