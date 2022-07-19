@@ -25,6 +25,7 @@ db = firebase.database()
 my_stream = db.child("data").stream(stream_handler)
 print(my_stream)
 
+
 #my_stream1 = db.child("data").child("Accelerometer").stream(stream_handler)
 #my_stream2 = db.child("data").child("Gyroscope").stream(stream_handler)
 #print(my_stream1)
