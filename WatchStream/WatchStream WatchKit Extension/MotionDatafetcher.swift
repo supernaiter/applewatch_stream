@@ -105,7 +105,9 @@ class MotionDatafetcher {
                       else {
                           print("Accelerometer is not available")
                       }
-                  }
+                      
+                      RealtimeDBHelper.shared.update(values: values)
+                }
            })
         }
         else {
