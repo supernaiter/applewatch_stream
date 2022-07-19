@@ -12,7 +12,7 @@ Motion data is captured from the apple watch and updated on Firebase RealTime Da
 ## From python side
 Run the main python file (applewatchstream/motiondatafetch/main.py) in the terminal using the command below
 ```bash
-python main.app
+python main.py
 ```
 
 
