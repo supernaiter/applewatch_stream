@@ -6,19 +6,32 @@
 //
 
 
-import UIKit
+import WatchKit
 import CoreMotion
+import HealthKit
+import UIKit
 
+class MotionDatafetcher  {
 
-class MotionDatafetcher {
-    
     private init () {}
     static let shared = MotionDatafetcher()
     
     
     private var timer: Timer?
-    private var updateTimeInterval: Double = 1
+    private var updateTimeInterval: Double = 1/60
     private let manager = CMMotionManager()
+    
+    lazy var conformingVC: WKInterfaceController = WKInterfaceController()
+    
+    
+    //healthkit
+//    private let healthStore = HKHealthStore()
+//    private var session : HKWorkoutSession?
+//    private var builder : HKLiveWorkoutBuilder?
+    
+    
+    private lazy var session = WKExtendedRuntimeSession()
+    
     
     func startFetch() {
         manager.startAccelerometerUpdates()
@@ -117,6 +130,60 @@ class MotionDatafetcher {
         manager.stopDeviceMotionUpdates()
     }
     
-}
+//    func startWorkoutSession() {
+//        let allTypes = Set([HKObjectType.quantityType(forIdentifier: .distanceWalkingRunning)!])
+//
+//        healthStore.requestAuthorization(toShare: allTypes, read: allTypes) { [weak self] (success, error) in
+//            guard let weakSelf = self else {return}
+//            if !success {
+//                // Handle the error here.
+//            }
+//            else {
+//                let configuration = HKWorkoutConfiguration()
+//                configuration.activityType = .walking
+//
+//                do {
+//                    weakSelf.session = try HKWorkoutSession(healthStore: weakSelf.healthStore, configuration: configuration)
+//                    if let _ = weakSelf.session {
+//                        weakSelf.builder = weakSelf.session!.associatedWorkoutBuilder()
+//                        weakSelf.builder!.dataSource = HKLiveWorkoutDataSource(healthStore: weakSelf.healthStore,
+//                                                                     workoutConfiguration: configuration)
+////                        weakSelf.session!.delegate = self
+////                        weakSelf.builder!.delegate = self
+//                        weakSelf.session!.startActivity(with: Date())
+//                        weakSelf.builder!.beginCollection(withStart: Date()) { (success, error) in
+//
+//                            guard success else {
+//                                // Handle errors.
+//                                print("SOMETHING WENT WRONG HERE!: \(error?.localizedDescription)")
+//                                return
+//                            }
+//
+//                            weakSelf.startDeviceMotionFetch()
+//
+//                            // Indicate that the session has started.
+//                        }
+//                    }
+//                } catch let error{
+//                    // Handle failure here.
+//                    print("SOMETHING WENT WRONG HERE!: \(error.localizedDescription)")
+//                    return
+//                }
+//
+//            }
+//        }
+//    }
+//
+//    func stopWorkoutSEssion() {
+//        if let s = self.session {
+//            if let b = self.builder {
+//                s.stopActivity(with: Date())
+//                b.workoutSession!.stopActivity(with: Date())
+//            }
+//        }
+//        stopFetch()
+//    }
+    
 
+}
 
