@@ -17,33 +17,36 @@ class InterfaceController: WKInterfaceController {
     
     var session = WKExtendedRuntimeSession()
     
+    
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
         
         
-        startButton.setHidden(false)
+//        startButton.setHidden(false)
         startButton.setEnabled(true)
-
-        stopButton.setHidden(true)
+//
+//        stopButton.setHidden(true)
         stopButton.setEnabled(false)
+        
                 
         setUPSession()
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
+        print("ACTIVATE")
     }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
-        
+        print("DEACTIVATE")
     }
     
     @IBAction func actionStop() {
-        startButton.setHidden(false)
+//        startButton.setHidden(false)
         startButton.setEnabled(true)
-        
-        stopButton.setHidden(true)
+//
+//        stopButton.setHidden(true)
         stopButton.setEnabled(false)
         
         self.stopSession()
@@ -53,15 +56,15 @@ class InterfaceController: WKInterfaceController {
     
     
     @IBAction func actionStart() {
-        startButton.setHidden(true)
+//        startButton.setHidden(true)
         startButton.setEnabled(false)
-        
-        stopButton.setHidden(false)
+//
+//        stopButton.setHidden(false)
         stopButton.setEnabled(true)
         
         self.startSession()
         
-        //MotionDatafetcher.shared.startFetch()
+       // MotionDatafetcher.shared.startFetch()
         
         //MotionDatafetcher.shared.stopSession() //startWorkoutSession() //startDeviceMotionFetch()
     }

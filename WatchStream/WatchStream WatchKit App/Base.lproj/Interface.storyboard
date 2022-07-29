@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38"/>
+    <device id="watch42"/>
     <dependencies>
         <deployment identifier="watchOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -15,20 +15,20 @@
                     <items>
                         <group width="1" alignment="left" layout="vertical" id="o4G-Fy-ege">
                             <items>
-                                <button width="1" height="1" alignment="center" verticalAlignment="center" title="STOP" id="UGR-C8-hJI">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="backgroundColor" red="1" green="0.1189014893203757" blue="0.13951185619834339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="font" type="system" pointSize="23"/>
-                                    <connections>
-                                        <action selector="actionStop" destination="AgC-eL-Hgc" id="pSZ-ts-H0v"/>
-                                    </connections>
-                                </button>
-                                <button width="1" height="1" alignment="center" verticalAlignment="center" hidden="YES" title="START" id="Fhy-Ec-sod">
+                                <button width="1" height="100" alignment="center" verticalAlignment="center" title="START" id="Fhy-Ec-sod">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="backgroundColor" name="AccentColor"/>
                                     <fontDescription key="font" type="system" pointSize="23"/>
                                     <connections>
                                         <action selector="actionStart" destination="AgC-eL-Hgc" id="qW9-AK-3FV"/>
+                                    </connections>
+                                </button>
+                                <button width="1" height="100" alignment="center" verticalAlignment="center" title="STOP" id="UGR-C8-hJI">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" red="1" green="0.1189014893203757" blue="0.13951185619834339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="23"/>
+                                    <connections>
+                                        <action selector="actionStop" destination="AgC-eL-Hgc" id="pSZ-ts-H0v"/>
                                     </connections>
                                 </button>
                             </items>
