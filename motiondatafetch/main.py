@@ -1,4 +1,5 @@
 import pyrebase
+import time
 
 firebaseConfig = {
     "apiKey": "AIzaSyD0UKdG2VQ3u7zQksxB3KpmcPiv1xle7Dw",
@@ -21,12 +22,18 @@ def stream_handler(message):
 
 db = firebase.database()
 
+starttime = time.time()
+while True:
+    users = db.child("users").get()
+    print(users.val())
+    time.sleep(60.0 - ((time.time() - starttime) % 60.0))
 
-my_stream = db.child("data").stream(stream_handler)
-print(my_stream)
+
+#my_stream = db.child("data").stream(stream_handler)
+# print(my_stream)
 
 
 #my_stream1 = db.child("data").child("Accelerometer").stream(stream_handler)
 #my_stream2 = db.child("data").child("Gyroscope").stream(stream_handler)
-#print(my_stream1)
-#print(my_stream2)
+# print(my_stream1)
+# print(my_stream2)

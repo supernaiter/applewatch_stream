@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/ruttabharoon/Desktop/motiondatafetch/venv"
+VIRTUAL_ENV="/Users/ruttabharoon/Documents/GitHub/applewatch_stream/motiondatafetch/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
