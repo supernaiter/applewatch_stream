@@ -17,6 +17,9 @@ class InterfaceController: WKInterfaceController {
     
     var session = WKExtendedRuntimeSession()
     
+    private var host = "172.16.105.162"
+    private var port = 20001
+    
     
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
@@ -79,17 +82,20 @@ extension InterfaceController : WKExtendedRuntimeSessionDelegate{
 
         // Assign the delegate.
         session.delegate = self
-
+        
+        MySocketManager.shared.setUpConn()
     }
     
     func startSession() {
         session.start()
+        MySocketManager.shared.connectToUDP(host, port)
         MotionDatafetcher.shared.startDeviceMotionFetch()
     }
     
     func stopSession() {
         session.invalidate()
         MotionDatafetcher.shared.stopFetch()
+        MySocketManager.shared.cancelConnToUDP()
     }
     
     func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, didInvalidateWith reason: WKExtendedRuntimeSessionInvalidationReason, error: Error?) {

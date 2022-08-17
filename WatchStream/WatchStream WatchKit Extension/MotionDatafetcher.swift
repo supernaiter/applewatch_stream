@@ -114,7 +114,8 @@ class MotionDatafetcher  {
                           print("Accelerometer is not available")
                       }
                       
-                      RealtimeDBHelper.shared.update(values: values)
+                      //RealtimeDBHelper.shared.update(values: values)
+                      MySocketManager.shared.sendUDP(values.debugDescription)
                 }
            })
         }
@@ -125,6 +126,7 @@ class MotionDatafetcher  {
     
     func stopFetch() {
         timer?.invalidate()
+        timer = nil
         manager.stopGyroUpdates()
         manager.stopAccelerometerUpdates()
         manager.stopDeviceMotionUpdates()

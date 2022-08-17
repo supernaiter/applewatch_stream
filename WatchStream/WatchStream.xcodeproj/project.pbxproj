@@ -23,6 +23,7 @@
 		FB869B73287DAEA900D03D49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB869B72287DAEA900D03D49 /* GoogleService-Info.plist */; };
 		FB869B74287DAEA900D03D49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB869B72287DAEA900D03D49 /* GoogleService-Info.plist */; };
 		FB869B75287DAEA900D03D49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB869B72287DAEA900D03D49 /* GoogleService-Info.plist */; };
+		FBAF520528ACD8B20057D98C /* MySocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF520428ACD8B20057D98C /* MySocketManager.swift */; };
 		FBB811D7288E995500A842C2 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB811D6288E995500A842C2 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		FB869B62287DAC7800D03D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB869B64287DAC7800D03D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB869B72287DAEA900D03D49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FBAF520428ACD8B20057D98C /* MySocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySocketManager.swift; sourceTree = "<group>"; };
 		FBB811D5288E995500A842C2 /* WatchStream WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchStream WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		FBB811D6288E995500A842C2 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -194,6 +196,7 @@
 				FB764A51287DB2C300F387E7 /* MotionDatafetcher.swift */,
 				FB764A4D287DB18A00F387E7 /* WatchStream-Bridging-Header.h */,
 				FB764A4E287DB18A00F387E7 /* WatchStream WatchKit App-Bridging-Header.h */,
+				FBAF520428ACD8B20057D98C /* MySocketManager.swift */,
 			);
 			path = "WatchStream WatchKit Extension";
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 			files = (
 				FB764A52287DB2C300F387E7 /* MotionDatafetcher.swift in Sources */,
 				FB869B5F287DAC7700D03D49 /* ExtensionDelegate.swift in Sources */,
+				FBAF520528ACD8B20057D98C /* MySocketManager.swift in Sources */,
 				FB869B5D287DAC7700D03D49 /* InterfaceController.swift in Sources */,
 				FB764A50287DB18B00F387E7 /* RealtimeDBHelper.swift in Sources */,
 				FB869B61287DAC7700D03D49 /* ComplicationController.swift in Sources */,
