@@ -194,9 +194,9 @@
 				FB869B72287DAEA900D03D49 /* GoogleService-Info.plist */,
 				FB764A4F287DB18B00F387E7 /* RealtimeDBHelper.swift */,
 				FB764A51287DB2C300F387E7 /* MotionDatafetcher.swift */,
+				FBAF520428ACD8B20057D98C /* MySocketManager.swift */,
 				FB764A4D287DB18A00F387E7 /* WatchStream-Bridging-Header.h */,
 				FB764A4E287DB18A00F387E7 /* WatchStream WatchKit App-Bridging-Header.h */,
-				FBAF520428ACD8B20057D98C /* MySocketManager.swift */,
 			);
 			path = "WatchStream WatchKit Extension";
 			sourceTree = "<group>";

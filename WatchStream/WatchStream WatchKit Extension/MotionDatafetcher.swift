@@ -18,7 +18,7 @@ class MotionDatafetcher  {
     
     
     private var timer: Timer?
-    private var updateTimeInterval: Double = 1/60
+    private var updateTimeInterval: Double = 0
     private let manager = CMMotionManager()
     
     lazy var conformingVC: WKInterfaceController = WKInterfaceController()
@@ -68,7 +68,8 @@ class MotionDatafetcher  {
         }
     }
     
-    func startDeviceMotionFetch() {
+    func startDeviceMotionFetch(_ updateTimeInterval: Double) {
+        self.updateTimeInterval = updateTimeInterval
         var values: [String:String] = [:]
         if manager.isDeviceMotionAvailable {
             self.manager.deviceMotionUpdateInterval = updateTimeInterval

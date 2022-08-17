@@ -7,6 +7,7 @@
 
 import WatchKit
 import Foundation
+import Network
 
 
 class InterfaceController: WKInterfaceController {
@@ -17,8 +18,9 @@ class InterfaceController: WKInterfaceController {
     
     var session = WKExtendedRuntimeSession()
     
-    private var host = "172.16.105.162"
-    private var port = 20001
+    private var host: NWEndpoint.Host = "172.16.105.162"
+    private var port: NWEndpoint.Port = 20001
+    private var updateTimeInterval: Double = 1/60
     
     
     override func awake(withContext context: Any?) {
@@ -89,7 +91,7 @@ extension InterfaceController : WKExtendedRuntimeSessionDelegate{
     func startSession() {
         session.start()
         MySocketManager.shared.connectToUDP(host, port)
-        MotionDatafetcher.shared.startDeviceMotionFetch()
+        MotionDatafetcher.shared.startDeviceMotionFetch(updateTimeInterval)
     }
     
     func stopSession() {
