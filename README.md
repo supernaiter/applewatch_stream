@@ -21,8 +21,8 @@ python server.py
 ## From Apple Watch side
 
 1. Pair your iPhone with your apple watch then connect your iphone to your macbook via cable
-2. Follow the steps in the video titled "ios_app.mp4" to see how to run the app. You will only need to do this once to install the app on your apple watch. After it is successfully installed just tap on the app to run it.
-3. Follow the steps in the video titled "change_host_ios.mp4" to update the value of the "host" variable in 'InterfaceController.swift' file
+2. Follow the steps in the video titled "change_host_ios.mp4" to update the value of the "host" variable in 'InterfaceController.swift' file
+3. Follow the steps in the video titled "ios_app.mp4" to see how to run the app. You will only need to do this once to install the app on your apple watch. After it is successfully installed just tap on the app to run it. 
 
 ## Updating motion data capture frequency
 
