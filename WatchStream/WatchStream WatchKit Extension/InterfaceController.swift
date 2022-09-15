@@ -8,6 +8,7 @@
 import WatchKit
 import Foundation
 import Network
+import UIKit
 
 
 class InterfaceController: WKInterfaceController {
@@ -74,6 +75,11 @@ class InterfaceController: WKInterfaceController {
         //MotionDatafetcher.shared.stopSession() //startWorkoutSession() //startDeviceMotionFetch()
     }
     
+    @objc func willResignActive(_ notification: Notification) {
+        // code to execute
+    }
+
+    
 }
 
 
@@ -101,14 +107,15 @@ extension InterfaceController : WKExtendedRuntimeSessionDelegate{
     }
     
     func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, didInvalidateWith reason: WKExtendedRuntimeSessionInvalidationReason, error: Error?) {
-        
+        print("SESSION HAS STOPPED because of an error \(error?.localizedDescription)")
     }
     
     func extendedRuntimeSessionDidStart(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
-        
+        print("SESSION HAS STARTED")
     }
     
     func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
+        print("SESSION HAS STOPPED")
         self.stopSession()
     }
     
